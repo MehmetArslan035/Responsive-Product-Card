@@ -1,0 +1,147 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.Product {
+  border-block-start: 7px solid #d9d9d9;
+  border-block-end: 7px solid #d9d9d9;
+  width: 95%;
+  margin: 2rem auto;
+  box-shadow: 3px 3px 10px gray;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.Product .left {
+  flex: 1;
+}
+.Product .right {
+  flex: 1;
+}
+.Product .left img {
+  width: 100%;
+  min-width: 250px;
+}
+.card1 {
+  margin-bottom: 10px;
+}
+.card1 h1 {
+  display: flex;
+  align-items: center;
+  font-size: 2.1rem;
+  font-family: "Roboto", sans-serif;
+  color: rgb(56, 56, 56);
+}
+
+.right .card1 .M2 {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.right .card1 .M2 span {
+  color: white;
+  background-color: rgb(61, 113, 255);
+  padding: 0.5rem;
+  border-radius: 5px;
+}
+
+.right .card1 p {
+  font-size: 1.2rem;
+}
+.card2 {
+  margin: 5px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 7px;
+}
+.card2 h3 {
+  color: rgb(56, 56, 56);
+  font-family: "Roboto", sans-serif;
+}
+.card2 p {
+  font-size: 1rem;
+  color: rgb(104, 103, 103);
+  font-family: "Roboto", sans-serif;
+}
+
+.card3 button {
+  background-color: rgb(240, 240, 240);
+  border: none;
+  padding: 1rem 0.8rem;
+  margin: 1rem 0.5rem;
+  white-space: nowrap;
+  font-size: 1rem;
+  border-radius: 5px;
+}
+.card3 .blue {
+  background-color: rgb(61, 113, 255);
+  color: white;
+}
+.card3 h3 {
+  display: flex;
+  flex-direction: column;
+}
+.card4 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.card4 button {
+  background-color: rgb(61, 113, 255);
+  border: none;
+  padding: 1rem 1.5rem;
+  margin: 1rem 0.5rem;
+  white-space: nowrap;
+  color: white;
+  font-size: 1rem;
+}
+.card4 h2 {
+  font-family: "Roboto", sans-serif;
+  color: rgb(51, 50, 50);
+  font-size: 2rem;
+  margin-right: 1rem;
+}
+@media screen and (max-width: 700px) {
+  .Product {
+    border-block-start: none;
+    border-block-end: none;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .card1 {
+    margin-left: 1rem;
+  }
+  .card2 {
+    display: flex;
+    margin-left: 1rem;
+  }
+
+  .card3 {
+    min-width: 50px;
+  }
+}
+.left img {
+  width: 250px;
+}
+
+@media screen and (max-width: 365px) {
+  .Product {
+    border-block-start: none;
+    border-block-end: none;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .right {
+    width: 250px;
+  }
+  .card4 {
+    flex-direction: column;
+  }
+}
